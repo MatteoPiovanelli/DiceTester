@@ -9,6 +9,8 @@ namespace DiceTester
 
 module Dice =
 
+    
+
     type Dice = 
         {Max : int}
 

@@ -1,7 +1,9 @@
 #load "Dice.fs"
 #load "DnD5e.fs"
+#load "Distribution.fs"
 
 open DiceTester
+open Distribution
 open Dice
 open DnD5e
 
