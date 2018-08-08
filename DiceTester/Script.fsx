@@ -3,7 +3,11 @@ open DiceTester
 open dnd5e
 
 // Define your library scripting code here
-let printAC low high =
-    printfn "AC"
-    let acs = dnd5e.acRange low high
-    printfn "%A" (acs |> List.take (1 + high - low))
+let Prova v : int =
+    match v with
+    | 0 -> 0
+    | v when v <= 6 -> v
+    | x -> 0
+
+let Cazzo (c: int) =
+    float c
