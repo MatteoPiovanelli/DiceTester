@@ -15,8 +15,13 @@ module Dice =
         member this.Probability (v:int) =
             let isInRange x =
                 match x with
-                | 0 -> 0
-                | x when x <= this.Max -> x
-                | x -> 0
-            let value = v |> isInRange |> float
-            value / (float this.Max)
+                | 0 -> 0.0
+                | x when x <= this.Max -> this.BaseProbability
+                | x -> 0.0
+            v |> isInRange 
+            
+        member private this.BaseProbability = 1.0 / (float this.Max)
+
+        member this.Distribution =
+            [ for value in 1 .. this.Max do
+                yield (value, this.BaseProbability) ]
