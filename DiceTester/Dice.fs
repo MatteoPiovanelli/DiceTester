@@ -1,12 +1,5 @@
 namespace DiceTester
 
-
-module dnd5e = 
-
-    let acRange low high =
-        [ for ac in low .. high do
-            yield ac ]
-
 // Probability
 // For dice, usually the events we are interested in are not the power set, but only the sample space
 // e.g for a d6, we only care for the single results, and not, for example the odd numbers.
@@ -14,7 +7,7 @@ module dnd5e =
 // and the set of results that crit. Also for saves, we can crit on a 20: the difference with attacks
 // is that those may have an extended crit range in some cases.
 
-module dice =
+module Dice =
 
     type Dice = 
         {Max : int}

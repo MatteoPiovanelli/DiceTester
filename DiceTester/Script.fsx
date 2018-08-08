@@ -1,6 +1,9 @@
-#load "DiceTester.fs"
+#load "Dice.fs"
+#load "DnD5e.fs"
+
 open DiceTester
-open dnd5e
+open Dice
+open DnD5e
 
 // Define your library scripting code here
 let Prova v : int =

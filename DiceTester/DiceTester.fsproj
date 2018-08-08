@@ -6,7 +6,8 @@
     <DebugType>portable</DebugType>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DiceTester.fs" />
+    <Compile Include="Dice.fs" />
+    <Compile Include="DnD5e.fs" />
     <None Include="Script.fsx" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
